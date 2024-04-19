@@ -3,8 +3,7 @@
 int numero = 0;
 int nroDivisores = 0;
 
-
-Console.WriteLine("=====Calculadora=====");
+Console.WriteLine("=====Calculadora Primo=====");
 
 Console.Write("Digite um numero: ");
 numero = int.Parse(Console.ReadLine());
