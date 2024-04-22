@@ -8,9 +8,9 @@ Console.WriteLine("=====Calculadora Primo=====");
 Console.Write("Digite um numero: ");
 numero = int.Parse(Console.ReadLine());
 
-for(int i = 1; i <= numero; i++)
+for (int i = 1; i <= numero; i++)
 {
-    if(numero % i == 0)
+    if (numero % i == 0)
     {
         nroDivisores++;
     }
@@ -19,10 +19,20 @@ for(int i = 1; i <= numero; i++)
 
 Console.WriteLine("=============================");
 
-if(nroDivisores == 2)
-    Console.WriteLine($"O numero {numero} é primo!");
-else
-    Console.WriteLine($"O numero {numero} NÃO é primo!");
+//if(nroDivisores == 2)
+//    Console.WriteLine($"O numero {numero} é primo!");
+//else
+//    Console.WriteLine($"O numero {numero} NÃO é primo!");
+
+switch (nroDivisores)
+{
+    case 2:
+        Console.WriteLine($"O numero {numero} é primo!");
+        break;
+    default:
+        Console.WriteLine($"O numero {numero} NÃO é primo!");
+        break;
+}
 
 Console.WriteLine("=============================");
 
